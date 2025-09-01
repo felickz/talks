@@ -1,0 +1,29 @@
+name: Render Marp slides (artifact)
+on:
+  push:
+    paths:
+      - 'presentations/**'
+  workflow_dispatch:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - name: Install Marp CLI
+        run: npm install @marp-team/marp-cli --no-save
+      - name: Render slides to HTML + PDF
+        run: |
+          mkdir -p out
+          for f in presentations/*.md; do
+            npx @marp-team/marp-cli "$f" -o "out/$(basename "$f" .md).html" --allow-local-files
+            npx @marp-team/marp-cli "$f" -o "out/$(basename "$f" .md).pdf" --allow-local-files
+          done
+        shell: bash
+      - uses: actions/upload-artifact@v4
+        with:
+          name: marp-render
+          path: out
