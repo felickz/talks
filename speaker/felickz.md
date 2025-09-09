@@ -11,4 +11,4 @@ Chad Bentz is a Strategic Field Security Specialist at GitHub with a wealth of e
 
 
 ## Speaker Photo
-![Chad Bentz](https://avatars.githubusercontent.com/u/1816282?v=4&s=400)
+![Chad Bentz](https://avatars.githubusercontent.com/u/1760475?v=4&s=400)
