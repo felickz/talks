@@ -63,8 +63,8 @@ We will explore a GitHub Sample app: https://github.com/dotnet-felickz/monorepo 
 ### Secret Protection
 
 - Push Protection
+- [Keeping secrets out of public repositories](https://github.blog/news-insights/product-news/keeping-secrets-out-of-public-repositories/)
 - [Detection of common NuGet / Azure / Cloud / API  tokens and secrets](https://docs.github.com/en/code-security/secret-scanning/introduction/supported-secret-scanning-patterns#high-confidence-patterns)
-
 
 ## Main Demos
 
