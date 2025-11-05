@@ -49,6 +49,7 @@ We will explore a GitHub Sample app: https://github.com/dotnet-felickz/monorepo 
 ### SCA
   - Dependency Graph + submissions for transitive depenencies in .NET via [Component Detection Submission Action](https://github.com/marketplace/actions/component-detection-dependency-submission-action)
   - [GitHub Advisory Database curation of NuGet vulnerabilities](https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anuget) to generate Dependabot Alerts
+  - [Customize your dependency review configuration](https://resources.github.com/learn/pathways/security/intermediate/customize-dependency-review-configuration/)
   - Dependabot Security and Version Updates
   - Immutable releases for binaries + signed with SBOM
   - Copilot AI for App Modernization
