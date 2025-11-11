@@ -1,7 +1,3 @@
-
-
-```markdown
-
 > [!WARNING]
 > **DRAFT** - This proposal is a work in progress and subject to change.
 
