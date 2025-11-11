@@ -32,19 +32,7 @@ We will explore a GitHub Sample app: https://github.com/dotnet-felickz/monorepo 
   - Dependencies (direct and transitive)
   - Secrets (prevention and detection)
 
-### Code Scanning
-  - CodeQL Default Setup to scan Branch / PR
-  - Advanced Setup yaml for fine-grained control (.NET monorepo sample [codeql.yml](https://github.com/dotnet-felickz/monorepo/blob/main/.github/workflows/codeql.yml))
-  - CodeQL coverage for Csharp and GitHub Actions languages, frameworks and queries
-  - CodeQL CLI / VSCode Extension
-    -  Custom queries + Multi repo variant analysis for query testing / hunting at scale
-  - Copilot Autofix - Using AI to suggest and apply code fixes automatically
 
-
-- Related News
-  - [CodeQL code scanning can analyze Java and C# codebases without needing a build](https://github.blog/changelog/2024-08-28-codeql-code-scanning-can-analyze-java-and-c-codebases-without-needing-a-build-ga/)
-  - [CodeQL - Full support for C# 13 / .NET 9](https://codeql.github.com/docs/codeql-overview/codeql-changelog/codeql-cli-2.20.5/#c)
-  -
 
 ### SCA
   - Dependency Graph + submissions for transitive depenencies in .NET via [Component Detection Submission Action](https://github.com/marketplace/actions/component-detection-dependency-submission-action)
@@ -67,9 +55,22 @@ We will explore a GitHub Sample app: https://github.com/dotnet-felickz/monorepo 
 - [Keeping secrets out of public repositories](https://github.blog/news-insights/product-news/keeping-secrets-out-of-public-repositories/)
 - [Detection of common NuGet / Azure / Cloud / API  tokens and secrets](https://docs.github.com/en/code-security/secret-scanning/introduction/supported-secret-scanning-patterns#high-confidence-patterns)
 
+### Code Scanning
+  - CodeQL Default Setup to scan Branch / PR
+  - Advanced Setup yaml for fine-grained control (.NET monorepo sample [codeql.yml](https://github.com/dotnet-felickz/monorepo/blob/main/.github/workflows/codeql.yml))
+  - CodeQL coverage for Csharp and GitHub Actions languages, frameworks and queries
+  - CodeQL CLI / VSCode Extension
+    -  Custom queries + Multi repo variant analysis for query testing / hunting at scale
+  - Copilot Autofix - Using AI to suggest and apply code fixes automatically
+
+
+- Related News
+  - [CodeQL code scanning can analyze Java and C# codebases without needing a build](https://github.blog/changelog/2024-08-28-codeql-code-scanning-can-analyze-java-and-c-codebases-without-needing-a-build-ga/)
+  - [CodeQL - Full support for C# 13 / .NET 9](https://codeql.github.com/docs/codeql-overview/codeql-changelog/codeql-cli-2.20.5/#c)  
+
 ## Main Demos
 
-- Blocking PR with SCA vuln using Dependency Review / PR with CodeQL SAST alert / Push Protection secret prevention
-- AI Autofix for simple vulnerabilities
-- MCP #get_code_scanning_alert and Agent Mode for complex fix
-  - ? Copilot Coding Agent ? demo
+- Automatic Dependency Submission / Blocking PR with SCA vuln using Dependency Review / PR with CodeQL SAST alert
+- Secret Protection - Push Protection
+- PR with CodeQL SAST alert / Copilot Autofix for vulnerabilities
+- MCP #get_code_scanning_alert and Agent Mode for complex fix - See: [GitHub MCP Setup for Advanced Security](https://github.com/felickz/talks/blob/main/proposals/sec-dotnet-proposal.md)
