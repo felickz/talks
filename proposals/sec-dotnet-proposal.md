@@ -53,8 +53,8 @@ We will explore a GitHub Sample app: https://github.com/dotnet-felickz/monorepo 
 
 ### Code Scanning
   - CodeQL Default Setup to scan Branch / PR
-  - Advanced Setup yaml for fine-grained control (.NET monorepo sample [codeql.yml](https://github.com/dotnet-felickz/monorepo/blob/main/.github/workflows/codeql.yml))
-  - CodeQL coverage for Csharp and GitHub Actions languages, frameworks and queries
+    - Advanced Setup yaml for fine-grained control (.NET monorepo sample [codeql.yml](https://github.com/dotnet-felickz/monorepo/blob/main/.github/workflows/codeql.yml))
+  - CodeQL coverage for [Csharp](https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration/csharp-built-in-queries), [JavaScript/TypeScript](https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration/javascript-typescript-built-in-queries) and [GitHub Actions](https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration/github-actions-built-in-queries) languages and [frameworks](https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/) 
   - CodeQL CLI / VSCode Extension
     -  Custom queries + Multi repo variant analysis for query testing / hunting at scale
   - Copilot Autofix - Using AI to suggest and apply code fixes automatically
