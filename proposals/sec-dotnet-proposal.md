@@ -11,7 +11,7 @@ As .NET developers, we often focus on features and functionality while security 
 
 ## Description
 
-We will explore a GitHub Sample app: https://github.com/dotnet-felickz/monorepo to demonstrate the application of these security features in a real-world-ish .NET projects using Maui and Blazor/MVC with ASP.NET Core.
+We will explore GitHub Sample apps https://github.com/dotnet-felickz/vulnerable-dependencies (SCA) and  https://github.com/dotnet-felickz/monorepo (SAST + Secret Scanning) to demonstrate the application of these security features in a real-world-ish .NET projects using Maui and Blazor/MVC with ASP.NET Core.
 
 ## Key Topics
 
