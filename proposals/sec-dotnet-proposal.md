@@ -55,10 +55,9 @@ We will explore GitHub Sample apps https://github.com/dotnet-felickz/vulnerable-
   - CodeQL Default Setup to scan Branch / PR
     - Advanced Setup yaml for fine-grained control (.NET monorepo sample [codeql.yml](https://github.com/dotnet-felickz/monorepo/blob/main/.github/workflows/codeql.yml))
   - CodeQL coverage for [Csharp](https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration/csharp-built-in-queries), [JavaScript/TypeScript](https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration/javascript-typescript-built-in-queries) and [GitHub Actions](https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration/github-actions-built-in-queries) languages and [frameworks](https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/) 
-  - CodeQL CLI / VSCode Extension
-    -  Custom queries + Multi repo variant analysis for query testing / hunting at scale
   - Copilot Autofix - Using AI to suggest and apply code fixes automatically
-
+  - (time permitting) [CodeQL CLI / VSCode Extension](https://docs.github.com/en/code-security/codeql-for-vs-code/getting-started-with-codeql-for-vs-code)
+    -  Custom queries + Multi repo variant analysis for query testing / hunting at scale
 
 - Related News
   - [CodeQL code scanning can analyze Java and C# codebases without needing a build](https://github.blog/changelog/2024-08-28-codeql-code-scanning-can-analyze-java-and-c-codebases-without-needing-a-build-ga/)
@@ -66,7 +65,7 @@ We will explore GitHub Sample apps https://github.com/dotnet-felickz/vulnerable-
 
 ## Main Demos
 
-- Automatic Dependency Submission / Blocking PR with SCA vuln using Dependency Review / PR with CodeQL SAST alert
+- Automatic Dependency Submission / Dependabot / Blocking PR with SCA vuln using Dependency Review 
 - Secret Protection - Push Protection
 - PR with CodeQL SAST alert / Copilot Autofix for vulnerabilities
 - MCP #get_code_scanning_alert and Agent Mode for complex fix - See: [GitHub MCP Setup for Advanced Security](https://github.com/felickz/talks/blob/main/proposals/sec-dotnet-proposal.md)
